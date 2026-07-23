@@ -25,49 +25,49 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
-    hsl(var(--secondary)) 3%,
-    hsl(var(--card)) 97%
+    #ebeae5 3%,
+    #f6f4ef 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right,
-    hsl(var(--secondary) / 0.251) 0%,
-    hsl(var(--card) / 0) 100%
-  ), hsl(var(--card));
+    rgba(235, 234, 229, 0.5) 0%,
+    rgba(246, 244, 239, 0) 100%
+  ), #ffffff;
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    to bottom right,
+    #c48900 0%,
+    hsla(36, 100%, 40%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(var(--card));
+    135deg,
+    rgba(196, 137, 0, 0.25) 0%,
+    hsla(35, 100%, 40%, 0) 59.86%
+  ), #ffffff;
   --border-gradient-onyx: linear-gradient(
     to bottom right,
-    hsl(var(--border)) 0%,
-    hsl(var(--border) / 0) 50%
+    #d9d6cf 0%,
+    rgba(217, 214, 207, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    to right,
+    #8a5a00,
+    #7a4f00
   );
 
-  /* solid — remapped to dong-ui theme tokens */
+  /* Light mode: readable on cream/white. Dark overrides below. */
 
-  --jet: hsl(var(--border));
-  --onyx: hsl(var(--secondary));
-  --eerie-black-1: hsl(var(--card));
-  --eerie-black-2: hsl(var(--card));
-  --smoky-black: hsl(var(--background));
-  --white-1: hsl(var(--foreground));
-  --white-2: hsl(var(--foreground));
-  --orange-yellow-crayola: hsl(45, 100%, 72%); /* keep accent */
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(var(--muted-foreground));
-  --light-gray-70: hsl(var(--muted-foreground) / 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --jet: #d9d6cf;
+  --onyx: #ebeae5;
+  --eerie-black-1: #ffffff;
+  --eerie-black-2: #ffffff;
+  --smoky-black: #f6f4ef;
+  --white-1: #0d0b08;
+  --white-2: #1a1814;
+  --orange-yellow-crayola: #8a5a00;
+  --vegas-gold: #7a4f00;
+  --light-gray: #3f3b36;
+  --light-gray-70: #5c574f;
+  --bittersweet-shimmer: hsl(0, 43%, 45%);
 
   /**
    * typography
@@ -109,6 +109,41 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
+}
+
+html.dark {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(45, 100%, 72%),
+    hsl(35, 100%, 68%)
+  );
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
 }
 
 
@@ -476,16 +511,17 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  /* Navbar chrome stays dark in both themes — keep light link text */
+  color: hsl(0, 0%, 84%);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: hsla(0, 0%, 84%, 0.7); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: hsl(45, 100%, 72%); }
 
 
 
