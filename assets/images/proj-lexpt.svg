@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#080808"/>
+  <rect x="40" y="40" width="720" height="520" rx="12" fill="#0f0f0f" stroke="rgba(247,226,192,0.15)" stroke-width="1"/>
+  <text x="60" y="90" font-family="monospace" font-size="14" fill="#4ADE80">LexPT  Legal RAG</text>
+  <rect x="60" y="110" width="300" height="8" rx="4" fill="rgba(247,226,192,0.3)"/>
+  <rect x="60" y="130" width="220" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="60" y="180" width="680" height="120" rx="8" fill="rgba(247,226,192,0.05)" stroke="rgba(247,226,192,0.1)"/>
+  <text x="80" y="220" font-family="Georgia, serif" font-size="18" fill="#F7E2C0">Sum�rio</text>
+  <text x="80" y="250" font-family="sans-serif" font-size="13" fill="#9CA3AF">Retrieved precedents from TRIAVE, CIAB, CNIACC...</text>
+  <rect x="60" y="320" width="680" height="80" rx="8" fill="rgba(74,222,128,0.05)" stroke="rgba(74,222,128,0.12)"/>
+  <text x="80" y="360" font-family="Georgia, serif" font-size="18" fill="#4ADE80">Decis�o</text>
+  <text x="80" y="385" font-family="sans-serif" font-size="13" fill="#9CA3AF">Grounded generation � ChromaDB � BM25 hybrid</text>
+  <circle cx="700" cy="500" r="40" fill="rgba(247,226,192,0.1)"/>
+  <text x="700" y="508" text-anchor="middle" font-family="monospace" font-size="12" fill="#F7E2C0">PDF</text>
+</svg>

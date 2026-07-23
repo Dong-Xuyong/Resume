@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#080808"/>
+  <rect x="40" y="40" width="720" height="520" rx="12" fill="#0f0f0f" stroke="rgba(74,222,128,0.15)" stroke-width="1"/>
+  <text x="60" y="90" font-family="monospace" font-size="14" fill="#4ADE80">Sergio Oliveira PT</text>
+  <rect x="60" y="110" width="200" height="140" rx="10" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.2)"/>
+  <text x="80" y="150" font-family="sans-serif" font-size="13" fill="#E5E7EB">Students</text>
+  <text x="80" y="190" font-family="Georgia, serif" font-size="36" fill="#4ADE80">12</text>
+  <rect x="280" y="110" width="460" height="140" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="300" y="150" font-family="sans-serif" font-size="13" fill="#9CA3AF">AI Workout Plan</text>
+  <rect x="300" y="170" width="400" height="10" rx="5" fill="rgba(74,222,128,0.2)"/>
+  <rect x="300" y="195" width="320" height="10" rx="5" fill="rgba(74,222,128,0.15)"/>
+  <rect x="300" y="220" width="360" height="10" rx="5" fill="rgba(74,222,128,0.1)"/>
+  <rect x="60" y="280" width="680" height="200" rx="10" fill="rgba(247,226,192,0.04)" stroke="rgba(247,226,192,0.1)"/>
+  <text x="80" y="320" font-family="Georgia, serif" font-size="20" fill="#F7E2C0">Workout Builder</text>
+  <text x="80" y="350" font-family="monospace" font-size="12" fill="#60A5FA">Next.js 15 � Firebase � Genkit</text>
+  <rect x="80" y="380" width="120" height="32" rx="16" fill="rgba(247,226,192,0.15)"/>
+  <text x="140" y="401" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#F7E2C0">Generate</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#080808"/>
+  <rect x="40" y="40" width="720" height="520" rx="12" fill="#0f0f0f" stroke="rgba(96,165,250,0.15)" stroke-width="1"/>
+  <text x="60" y="90" font-family="monospace" font-size="14" fill="#60A5FA">AF Braga Referee Portal</text>
+  <rect x="60" y="120" width="320" height="180" rx="10" fill="rgba(96,165,250,0.06)" stroke="rgba(96,165,250,0.15)"/>
+  <text x="80" y="160" font-family="Georgia, serif" font-size="18" fill="#60A5FA">NLP Q&amp;A</text>
+  <text x="80" y="190" font-family="sans-serif" font-size="13" fill="#9CA3AF">200+ exam documents indexed</text>
+  <text x="80" y="220" font-family="sans-serif" font-size="13" fill="#9CA3AF">Auto-generated practice questions</text>
+  <rect x="400" y="120" width="340" height="180" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="420" y="160" font-family="sans-serif" font-size="13" fill="#E5E7EB">50+ referees</text>
+  <text x="420" y="200" font-family="Georgia, serif" font-size="42" fill="#4ADE80">30%</text>
+  <text x="420" y="230" font-family="sans-serif" font-size="13" fill="#9CA3AF">missed exam prep sessions</text>
+  <rect x="60" y="330" width="680" height="150" rx="10" fill="rgba(192,132,252,0.05)" stroke="rgba(192,132,252,0.12)"/>
+  <text x="80" y="375" font-family="Georgia, serif" font-size="18" fill="#C084FC">Automated Reminders</text>
+  <text x="80" y="410" font-family="monospace" font-size="12" fill="#9CA3AF">Python � NLP � Power BI dashboard</text>
+</svg>
