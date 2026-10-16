@@ -12,9 +12,10 @@
   <meta name="theme-color" content="#f6f4ef">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dong-ui/theme.css?v=3">
-  <link rel="stylesheet" href="./assets/css/style.css?v=3">
+  <link rel="stylesheet" href="/ui/shell.css?v=1">
+  <link rel="stylesheet" href="./assets/css/style.css?v=4">
   <script src="./dong-ui/theme.js?v=3"></script>
   <style>
     .avatar-box img {
@@ -33,10 +34,10 @@
       margin-top: 6px;
     }
     .skill-tags span {
-      background: var(--border-gradient-onyx, #2a2a2a);
-      color: var(--light-gray, #d6d6d6);
-      border: 1px solid var(--jet, #383838);
-      border-radius: 8px;
+      background: var(--dx-accent-soft, var(--dx-card));
+      color: var(--dx-text);
+      border: 1px solid var(--dx-border, var(--dx-muted));
+      border-radius: var(--dx-radius-sm, 8px);
       padding: 5px 10px;
       font-size: 12px;
     }
@@ -44,13 +45,7 @@
     .timeline-text a,
     .project-title a,
     .contact-link {
-      color: #8a5a00;
-    }
-    html.dark .about-text a,
-    html.dark .timeline-text a,
-    html.dark .project-title a,
-    html.dark .contact-link {
-      color: #ffdb70;
+      color: var(--dx-accent);
     }
     .project-item > a {
       height: 100%;
@@ -60,7 +55,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+      background: var(--dx-card-solid, var(--dx-card));
     }
     .project-img img {
       width: 72px;
@@ -74,30 +69,45 @@
       margin-top: 16px;
     }
     .highlight-list li {
-      background: var(--border-gradient-onyx, #2a2a2a);
-      border: 1px solid var(--jet, #383838);
-      border-radius: 12px;
+      background: var(--dx-card-solid, var(--dx-card));
+      border: 1px solid var(--dx-border, transparent);
+      border-radius: var(--dx-radius);
       padding: 14px 16px;
     }
     .highlight-list strong {
       display: block;
-      color: var(--white-2, #fafafa);
+      color: var(--dx-text);
       margin-bottom: 4px;
     }
   </style>
 </head>
 
-<body>
-  <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
+<body class="dx">
+  <header class="dx-header">
+    <a class="dx-home" href="/" aria-label="Home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    </a>
+    <h1 class="dx-title">Xuyong Dong</h1>
+    <div class="dx-actions">
+      <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
+    </div>
+  </header>
+  <nav class="dx-tabs" aria-label="Resume sections">
+    <button type="button" class="dx-tab" data-nav-link aria-current="page">About</button>
+    <button type="button" class="dx-tab" data-nav-link>Resume</button>
+    <button type="button" class="dx-tab" data-nav-link>Portfolio</button>
+    <button type="button" class="dx-tab" data-nav-link>Awards</button>
+    <button type="button" class="dx-tab" data-nav-link>Contact</button>
+  </nav>
   <main>
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar dx-card" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/portrait.jpg" alt="Xuyong Dong" width="80" height="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Xuyong Dong">Xuyong Dong</h1>
+          <p class="name" title="Xuyong Dong">Xuyong Dong</p>
           <p class="title">GenAI &amp; ML Engineer</p>
         </div>
 
@@ -180,28 +190,8 @@
     </aside>
 
     <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Awards</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
       <!-- ABOUT -->
-      <article class="about active" data-page="about">
+      <article class="about dx-card active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -298,7 +288,7 @@
       </article>
 
       <!-- RESUME -->
-      <article class="resume" data-page="resume">
+      <article class="resume dx-card" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
@@ -441,7 +431,7 @@
       </article>
 
       <!-- PORTFOLIO -->
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio dx-card" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
@@ -617,7 +607,7 @@
       </article>
 
       <!-- AWARDS -->
-      <article class="blog" data-page="awards">
+      <article class="blog dx-card" data-page="awards">
         <header>
           <h2 class="h2 article-title">Awards &amp; more</h2>
         </header>
@@ -686,7 +676,7 @@
       </article>
 
       <!-- CONTACT -->
-      <article class="contact" data-page="contact">
+      <article class="contact dx-card" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>

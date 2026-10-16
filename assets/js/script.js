@@ -91,8 +91,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
     for (let j = 0; j < navigationLinks.length; j++) {
       if (navigationLinks[j] === this) {
         navigationLinks[j].classList.add("active");
+        navigationLinks[j].setAttribute("aria-current", "page");
       } else {
         navigationLinks[j].classList.remove("active");
+        navigationLinks[j].removeAttribute("aria-current");
       }
     }
 
